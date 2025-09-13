@@ -22,9 +22,9 @@ The API provides structured GraphQL queries for fetching bank details, branch in
 
 ##  Project Structure
 main.py # Application entrypoint (FastAPI + GraphQL)
-├── requirements.txt # Python dependencies
-├── docker-compose.yml # Docker setup 
-├── test-api # for testing 
+ requirements.txt # Python dependencies
+ docker-compose.yml # Docker setup 
+ test-api # for testing 
 
 API Endpoints
 
