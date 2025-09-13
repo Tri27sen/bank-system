@@ -1,0 +1,17 @@
+
+query {
+  branches(city: "Mumbai", first: 10) {
+    totalCount
+    edges {
+      node {
+        ifsc
+        branch
+        address
+        bank {
+          name
+        }
+      }
+    }
+  }
+}
+
