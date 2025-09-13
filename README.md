@@ -21,16 +21,16 @@ The API provides structured GraphQL queries for fetching bank details, branch in
 ---
 
 ##  Project Structure
-main.py # Application entrypoint (FastAPI + GraphQL)
- requirements.txt # Python dependencies
- docker-compose.yml # Docker setup 
- test-api # for testing 
+  - **main.py** # Application entrypoint (FastAPI + GraphQL)
+  - **requirements.txt** # Python dependencies
+  - **docker-compose.yml** # Docker setup 
+  - **test-api** # for testing 
 
-API Endpoints
+## API Endpoints
 
-GraphQL Playground: http://localhost:8000/gql
-Health Check: http://localhost:8000/health
-API Documentation: http://localhost:8000/docs (FastAPI auto-generated)
+- **GraphQL Playground: http://localhost:8000/gql**
+- **Health Check: http://localhost:8000/health**
+- **API Documentation: http://localhost:8000/docs (FastAPI auto-generated)**
 # Bank Branches GraphQL API
 
 A FastAPI-based GraphQL API for querying Indian bank branches and IFSC codes. This API provides comprehensive information about banks and their branches across India.
