@@ -4,7 +4,7 @@ import os
 
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
-    "postgresql:")
+    "postgresql://AutoBox_owner:SUhkErJ4KH0u@ep-tight-art-a50hk2av-pooler.us-east-2.aws.neon.tech/bank?sslmode=require&channel_binding=require"")
 
 async def setup_database():
     """Create tables and insert sample data"""
