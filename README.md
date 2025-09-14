@@ -181,33 +181,26 @@ query {
 #### Search Branches with Filters
 ```graphql
 query {
-  branches(
-    first: 10
-    bankName: "State Bank"
-    city: "Mumbai"
-    state: "Maharashtra"
-  ) {
+  branches(city: "Mumbai", first: 5) {
+    totalCount
     edges {
       node {
         ifsc
         branch
         address
-        city
-        state
         bank {
           name
         }
       }
     }
-    totalCount
-  }
+}
 }
 ```
 
 #### Get Branch by IFSC
 ```graphql
 query {
-  branchByIfsc(ifsc: "SBIN0001234") {
+  branchByIfsc(ifsc: "ABHY0065002") {
     ifsc
     branch
     address
